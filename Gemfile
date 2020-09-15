@@ -12,6 +12,8 @@ gem 'sidekiq'
 gem 'sidekiq-scheduler'
 #openssl
 gem 'openssl'
+#Redis
+gem 'redis'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
