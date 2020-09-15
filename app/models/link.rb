@@ -9,11 +9,22 @@ class Link < ApplicationRecord
     pinning_test: 60
   }
 
-  validates :name,
+  validates :url,
     presence: true,
     uniqueness: true
 
   validates :status, presence: true
 
+  after_commit :check_ssl, on: [:create]
+
+  def current_status
+    status
+  end
+
+  private
+
+  def check_ssl
+    #TODO
+  end
   #have to implement a validation for links!!
 end
