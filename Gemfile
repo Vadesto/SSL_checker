@@ -10,6 +10,8 @@ gem 'pg'
 #sidekiq
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+#openssl
+gem 'openssl'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
