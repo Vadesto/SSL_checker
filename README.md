@@ -30,7 +30,7 @@
 
 - run `foreman start`
 
-- you can add new Links for checking SSL using `rails c` and `Link.add(url:"{URL}")`
+- you can add new Links for checking SSL using `rails c` and `Link.create!(url:"{URL}")`
 
 ## API:
 
