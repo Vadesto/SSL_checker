@@ -1,0 +1,4 @@
+:schedule:
+  mass_check:
+    every: '20m'   # Runs once per 20 minutes
+    class: MassCheckWorker
