@@ -1,4 +1,4 @@
-# README
+# SSL checker
 
 ## This project represents a simple SSL checker that can show basic info about SSL protocols:
 
@@ -34,4 +34,4 @@
 
 ## API:
 
--not implemented yet. README will be updated later
+- not implemented yet. README will be updated later
