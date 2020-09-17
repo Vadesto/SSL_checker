@@ -30,6 +30,8 @@
 
 - run `foreman start`
 
+- you can access sidekiq's ui at `localhost:3000/sidekiq/`
+
 - you can add new Links for checking SSL using `rails c` and `Link.create!(url:"{URL}")`
 
 ## API:
