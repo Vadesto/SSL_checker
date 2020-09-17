@@ -7,7 +7,7 @@ class CheckWorker
   def perform(link_id)
     link = Link.find(link_id)
     uri = URI(link.url)
-    
+
     begin
       response = Net::HTTP.start(uri.host, uri.port, :use_ssl => true)
       cert = response.peer_cert || nil
@@ -15,7 +15,7 @@ class CheckWorker
       week = 7 * 86400
 
       if cert == nil
-        link.status = :broken
+        link.status = :other
       elsif Time.now + week > cert.not_after
         link.status = :expires_in_one_week
       elsif Time.now + (week*2) > cert.not_after

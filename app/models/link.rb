@@ -2,15 +2,11 @@ class Link < ApplicationRecord
   enum status: {
     unchecked: 0,
     expired: 10,
-    wrong_host: 20,
-    self_signed: 30,
-    untrusted_root: 40,
-    revoked: 50,
-    pinning_test: 60,
-    expires_in_two_weeks: 80,
-    expires_in_one_week: 90,
-    broken: 100,
-    good: 110
+    expires_in_two_weeks: 20,
+    expires_in_one_week: 30,
+    broken: 40,
+    other: 50,
+    good: 60
   }
 
   validates :url,
