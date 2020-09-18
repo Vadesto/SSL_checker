@@ -24,6 +24,8 @@
 
 - Clone this project using `git clone https://github.com/Vadesto/SSL_checker.git`
 
+- Copy .env-exmple to .env
+
 - run `bundle install`
 
 - run `docker-compose up`
