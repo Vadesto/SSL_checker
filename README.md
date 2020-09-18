@@ -38,4 +38,6 @@
 
 ## API:
 
-- not implemented yet. README will be updated later
+- use GET /api/status to get all of the domains and their statuses
+
+- use POST /api/domain and url as a parameter to add a new domain to the database
