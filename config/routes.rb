@@ -10,4 +10,6 @@ Rails.application.routes.draw do
       ActiveSupport::SecurityUtils.secure_compare(::Digest::SHA256.hexdigest(password), ::Digest::SHA256.hexdigest(ENV["SIDEKIQ_PASSWORD"]))
   end #if Rails.env.production?
   mount Sidekiq::Web, at: "/sidekiq"
+
+  mount API => '/api'
 end
