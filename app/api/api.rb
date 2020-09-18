@@ -3,11 +3,13 @@ class API < Grape::API
 
   desc 'Returns urls and their statuses'
   get :status do
-    Link.all.select("url, status")
+    links = Link.all
+    present links, with: API::Entities::Link
   end
 
   desc 'Adds domain to the list'
   post :domain do
-    Link.create!(url: params[:url])
+    link = Link.create!(url: params[:url])
+    present link, with: API::Entities::Link
   end
 end
