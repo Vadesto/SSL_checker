@@ -24,13 +24,15 @@
 
 - Clone this project using `git clone https://github.com/Vadesto/SSL_checker.git`
 
-- Copy .env-exmple to .env
+- Copy .env.example to .env
 
 - run `bundle install`
 
 - run `docker-compose up`
 
 - run `foreman start`
+
+- create database using `rails db:create` and `rails db:migrate`
 
 - you can access sidekiq's ui at `localhost:3000/sidekiq/`
 
