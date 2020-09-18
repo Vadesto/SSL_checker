@@ -15,6 +15,7 @@ gem 'openssl'
 #Redis
 gem 'redis'
 #grape-entity
+gem 'grape'
 gem 'grape-entity'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
